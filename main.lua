@@ -25,8 +25,8 @@ tabBar.Size = UDim2.new(1, 0, 0, 40)
 tabBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 tabBar.Parent = mainFrame
 
--- Table des noms de sections
-local tabs = {"Createur", "Fly", "Parametre"}
+-- Table des noms de sections (modifiée ici)
+local tabs = {"Createur", "Player Script", "Parametre"}
 local buttons = {}
 local pages = {}
 
@@ -75,7 +75,7 @@ image.BackgroundTransparency = 1
 image.Image = "rbxassetid://6023426915"
 image.Parent = pages[1]
 
--- Contenu de la page 2 (Fly)
+-- Contenu de la page 2 (Player Script)
 
 local flyButton = Instance.new("TextButton")
 flyButton.Text = "Activer Fly"
@@ -156,7 +156,6 @@ end
 
 hideAllPages()
 pages[1].Visible = true
-
 local rootPart = character:WaitForChild("HumanoidRootPart")
 
 local flying = false
